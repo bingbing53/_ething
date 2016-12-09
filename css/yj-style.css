@@ -1,0 +1,763 @@
+/*易聚首页*/
+p,ul {
+	margin: 0;
+}
+.section1 {
+	border: 1px solid #EB6100;
+	height: 502px;
+	font-size: 0;
+}
+.section1 .left {
+	width: 775px;
+	float: left;
+	height: 502px;
+}
+.section1 .right {
+	width: 215px;
+	float: right;
+	height: 502px;
+}
+.ml4 {
+	margin-left: 4px;
+}
+.sec3-3,
+.sec1-3,
+.sec2-3 {
+	display: inline-block;
+	vertical-align: middle;
+	height: 499px;
+}
+.s-item {
+	width: 246px;
+	height: 163px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.s-item2 {
+	width: 246px;
+	height: 331px;
+}
+.sec1-3 {
+	width: 246px;
+	height: 499px;
+}
+.sec2-3 {
+	width: 498px;
+	height: 499px;
+}
+.sec3-3 {
+	width: 748px;
+	position: relative;
+	overflow: hidden;
+}
+.sec3-3 >ul {
+	width: 10000px;
+	height: 499px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sec3-3 >ul li {
+	width: 748px;
+	height: 499px;
+	float: left;
+}
+.sec3-3 li img,
+.s-item img,
+.sec2-2 li img,
+.s-item2 img,
+.sec4-3 li img {
+	width: 100%;
+	height: 100%;
+}
+.sec2-2 {
+	width: 497px;
+	height: 331px;
+	position: relative;
+	overflow: hidden;
+}
+.sec3-2 {
+	width: 748px;
+	height: 331px;
+	position: relative;
+	overflow: hidden;
+}
+.sec3-2 ul {
+	width: 10000px;
+	height: 331px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sec3-2 li {
+	width: 748px;
+	height: 331px;
+	float: left;
+}
+.sec2-2 ul {
+	width: 10000px;
+	height: 331px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sec2-2 li {
+	width: 497px;
+	height: 331px;
+	float: left;
+}
+.sec4-3 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.sec4-3 ul {
+	width: 10000px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.sec4-3 li {
+	width: 998px;
+	height: 499px;
+	float: left;
+}
+.carousel ul {
+	width: 4000px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.carousel ul li {
+	float: left;
+	width: 775px;
+	height: 500px;
+	position: relative;
+}
+.carousel ul li img {
+	width: 100%;
+	height: 100%;
+}
+.carousel p {
+	width: 400px;
+	height: 60px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	text-indent: 25px;
+	line-height: 60px;
+	font-size: 18px;
+	background: url(../img/P_bg.png) repeat;
+}
+.carousel p a {
+	color: #ffffff;
+}
+.carousel p:hover {
+	background: url(../img/p_bg_h.png) repeat;
+}
+.carousel p:hover a {
+	color: #EB6100;
+}
+.reveal div {
+	width: 255px;
+	height: 140px;
+	margin-right: 5px;
+	position: relative;
+	float: left;
+}
+.revealw {
+	height: auto;
+	margin-left: -10px;
+}
+.revealw div {
+	width: 326px;
+	height: 214px;
+	margin: 0 0 10px 10px;
+}
+.reveal div:last-of-type {
+	margin-right: 0;
+}
+.reveal div img {
+	width: 100%;
+}
+.revealw1 {
+	width: 680px;
+}
+.jxs_addmore {
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-weight: 600;
+	background-color: #dbdcdc;
+}
+.section1 .right ul {
+	margin-top: 10px;
+}
+.section1 .right li {
+	text-indent: 10px;
+	line-height: 22px;
+	font-size: 14px;
+}
+.cap ul li {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 14px;
+}
+.section2 .cont {
+	border: 1px solid #eb6100;
+	height: 570px;
+}
+.cap ul li.active a {
+	color: #eb6100;
+}
+.yj_loveCar .revealw {
+	width: 680px;
+}
+.yj_link {
+	margin: 10px 0;
+	text-align: center;
+}
+.yj_loveCar .fr {
+	height: 442px;
+	width: 328px;
+}
+.yj_loveCar .main_img {
+	margin-left: 5px;
+	height: 216px;
+}
+.yj_loveCar .main_img img {
+	width: 100%;
+	height: 100%;
+}
+.yj_loveCar .fr ul {
+	font-size: 0;
+	margin-top: 5px;
+}
+.yj_loveCar .fr li {
+	width: 104px;
+	height: 68px;
+	margin: 5px 0 0 5px;
+	display: inline-block;
+}
+.yj_loveCar .fr li img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.jxs_addmore a:visited {
+	color: #333333;
+}
+
+/*start logo*/
+.yj_nav {
+	margin-top: 33px;
+}
+.yj_nav li {
+	border: 1px solid #eb6100;
+	margin: 0 10px;
+}
+.yj_nav li a {
+	font-size: 16px;
+}
+.logo{
+	border-width: 2px;
+	height: 110px;
+}
+/*start 轮播新闻*/
+.news_carousel{
+	width: 1000px;
+	height: 500px;
+	margin: 10px auto;
+}
+.news_carousel .carousel-inner img{
+	float: left;
+}
+.news_carousel .carousel-inner .img1{
+	height: 500px;
+}
+.news_carousel .carousel-inner .img2{
+	height: 170px;
+}
+.news_carousel .carousel-inner .img3{
+	height: 320px;
+}
+.pic_b{
+	margin-bottom: 10px;
+}
+.pic_r{
+	margin-right: 10px;
+}
+.carousel-control {
+	position: absolute;
+	top: 178px;
+	left: 0;
+	width: 30px;
+	height: 60px;
+}
+.carousel-control img{
+	display: none;
+}
+.carousel-indicators .active{
+	background: #EB6100;
+}
+.carousel-indicators li{
+	background: #ccc;
+	border: none;
+}
+/*start 易行部落*/
+.wrapper .left {
+	width: 745px
+}
+.wrapper .activityList ul {
+	margin-left: -20px;
+	overflow: hidden;
+	margin-top: -15px;
+	margin-bottom: 10px;
+}
+.wrapper .activityList ul li {
+	width: 236px;
+	height: 255px;
+	overflow: hidden;
+	margin: 10px 0 0 19px;
+	position: relative;
+	float: left;
+}
+.wrapper .activityList ul li h5 {
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	width: 216px;
+	white-space: nowrap;
+}
+.wrapper .activityList ul li h5 img {
+	margin-right: 5px;
+	margin-top: -3px;
+}
+.wrapper .activityList ul li .activityInfo {
+	background: #f5f5f5;
+	width: 236px;
+	padding: 1px 10px 5px 10px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 155px;
+	transition: top .5s;
+}
+.wrapper .activityList ul li p {
+	color: #999999;
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+	margin-bottom: 5px
+}
+.wrapper .activityList ul li p span a {
+	color: #999999;
+}
+.wrapper .activityList ul li p span a:hover {
+	color: #eb6100;
+}
+.wrapper .activityList ul li p span font {
+	color: #eb6100;
+}
+.wrapper .activityList ul li p.ju_none {
+	display: none
+}
+.wrapper .activityList ul li p i {
+	width: 15px;
+	height: 15px;
+	margin: 2px 5px 0 0;
+}
+.wrapper .activityList ul li p i.icon_ju {
+	background: url("../img/ju.jpg") no-repeat;
+	background-size: 15px 15px;
+}
+.wrapper .activityList ul li p i.icon_user {
+	background: url("../img/yj_tribe.png") no-repeat;
+	height: 16px
+}
+.wrapper .activityList ul li p span.price {
+	font-size: 18px;
+	color: #eb6100;
+	margin-top: -8px
+}
+.wrapper .activityList ul li a.signup {
+	display: block;
+	width: 140px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	background: #EB6100;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 5px;
+	margin: 5px auto;
+}
+.wrapper .activityList ul li a:hover.signup {
+	background: #ce5704
+}
+.wrapper .activityList ul li:hover .activityInfo {
+	top: 95px;
+}
+.wrapper .activityList ul li:hover .activityInfo p.ju_none {
+	display: block;
+}
+
+/*start 精选自驾游*/
+.vertical_line {
+	width: 5px;
+	height: 18px;
+	background: #eb6100;
+	display: inline-block;
+	margin-left: -8px;
+	margin-bottom: -3px;
+}
+.mt20{
+	margin-top: 15px;
+}
+.mt20 .cap{
+	margin-bottom: 10px;
+}
+.reveal p {
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	background: url("../img/P_bg.png");
+}
+.reveal p:hover{
+	background: url("../img/bg-70.png");
+}
+.reveal p span {
+	display: block;
+	line-height: 40px;
+}
+.reveal p a{
+	display: block;
+	color: #ffffff;
+}
+.yj_loveCar .fr h1 {
+	font-size: 18px;
+	text-align: center;
+	line-height: 30px;
+	padding: 20px 0;
+	background: #f5f5f5;
+	width: 323px;
+	margin-left: 5px;
+	font-weight: bold;
+}
+.cap .right {
+	padding-top: 6px;
+}
+/*活动报名*/
+.yj_pos{
+	font-size: 14px;
+	font-family: "黑体";
+	margin-top: 10px;
+}
+.yj_pos p{
+	color: #000;
+}
+.yj_pos .breadcrumb{
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+.yj_pos .breadcrumb>li+li:before {
+	content: ">";
+	/*color: #eb6100;*/
+}
+/*.yj_pos .breadcrumb a{*/
+	/*color: #EB6100;*/
+/*}*/
+.newCarMeau {
+	width: 100%;
+	background: #eb6100;
+	line-height: 35px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+.newCarMeau a.active, .newCarMeau a:hover {
+	font-size: 16px;
+}
+.newCarMeau a {
+	display: block;
+	float: left;
+	width: 90px;
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+}
+.wrapper .yj_activity ul {
+	margin-left: -22px;
+	margin-top: 20px;
+}
+.wrapper .yj_activity ul li{
+	width: 318px;
+	height: 337px;
+	margin:0 0 30px  22px;
+}
+/*.wrapper .yj_activity ul li:hover{*/
+	/*box-shadow: 0 5px 7px #999;*/
+/*}*/
+
+.wrapper .yj_activity ul li .activityInfo{
+	position: absolute;
+	top: 216px;
+	left: 0px;
+	width: 318px;
+	height: 200px;
+}
+.wrapper .yj_activity ul li:hover .activityInfo{
+	top: 140px;;
+}
+.wrapper .yj_activity ul li h5 {
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 5px;
+}
+.wrapper .yj_activity ul li p span.price{
+	font-size: 25px;
+	margin-top: -10px;
+	margin-right: 15px;
+}
+.wrapper .yj_activity ul li a.signup{
+	margin-bottom: 15px;
+}
+.wrapper .yj_activity ul li p{
+	margin-top: 2px;
+}
+a.loadMore {
+	display: block;
+	background: #dddddd;
+	line-height: 35px;
+	text-align: center;
+	outline: none;
+	font-size: 16px;
+	color: #000000;
+	font-weight: 600;
+}
+a.loadMore i {
+	display: inline-block;
+	height: 0px;
+	width: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #eb6100;
+	margin: 0 5px;
+}
+a.loadMore:hover {
+	color: #EB6100;
+	background: #cccccc;
+}
+.wrapper .yj_activity ul li p.deadline {
+	width: 140px;
+	height: 20px;
+	line-height: 20px;
+	background: #eb6100;
+	opacity: .8;
+	filter: (Alpha=70);
+	color: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 5px;
+	text-align: center;
+}
+/*页码*/
+.pageCount{
+	text-align: center;
+	margin-bottom: 35px;
+}
+.active_p{
+	color: #EB6100;
+}
+/*易行活动发布*/
+.active_release{
+	margin-top: 10px;
+}
+.active_border{
+	border: 1px solid #ededed;
+	padding: 20px 0 20px 20px;
+}
+.active_release p{
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.active_box,.active_box1,.active_box2,.active_data{
+	font-size: 12px;
+	color:#999;
+	line-height: 30px;
+	height: 30px;
+	margin-bottom: 20px;
+	position: relative;
+	/*padding-left: 5px;*/
+}
+.bixuan{
+	color: #eb6100;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: 10px;
+	margin-top: 4px;
+	height: 20px;
+}
+.active_l select,.active_l input{
+	border: 1px solid #ccc;
+	width: 140px;
+	outline: none;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 6px;
+	color: #000;
+}
+.active_m textarea{
+	width: 300px;
+	height: 60px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding: 6px;
+	color: #000;
+}
+.active_m input{
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 6px;
+	color: #000;
+}
+.active_m div p{
+	font-size: 12px;
+	color: #999;
+	width: 200px;
+	margin-left: 30px;
+}
+.active_m .active_box1{
+	height: 80px;
+}
+.active_r input{
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	border: 1px solid #ccc;
+	color: #000;
+}
+.active_box2{
+	height: 190px;
+}
+.active_r a{
+	width: 50px;
+	height:20px;
+	background: #EB6100;
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 10px;
+}
+.active_r .yulan{
+	width: 50px;
+	font-size: 12px;
+	margin-left: 37px;
+	margin-top: 15px;
+}
+.active_r .yl_p{
+	width: 180px;
+	height: 140px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	float: left;
+	margin-top: -50px;
+	margin-left: 90px;
+}
+.active_data{
+	padding-top: 5px;
+}
+.active_data div{
+	float: left;
+	/*height: 500px;*/
+	margin-left: 83px;
+	margin-top: -29px;
+}
+.active_data label{
+	width: 110px;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 10px;
+	font-weight: normal;
+	margin-left: 30px;
+}
+input[type=checkbox]{
+	margin-top: 0;
+	margin-right: 5px;
+}
+.active_content{
+	margin-top: 20px;
+	position: relative;
+}
+.active_content textarea{
+	border:1px solid #ededed;
+	height: 230px;
+	width: 1000px;
+	padding-left: 6px;
+	padding-top: 6px;
+	color: #000;
+	outline: none;
+
+}
+.active_pic_add img{
+	margin-right: 5px;
+	margin-top: -3px;
+}
+.active_pic_add{
+	font-size: 20px;
+	color: #EB6100;
+	border: 1px solid #CCCCCC;
+	float: left;
+	position: absolute;
+	top: 160px;;
+	left: 20px;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 700;
+}
+.active_content p{
+	font-size: 12px;
+	color: #666;
+	text-align: left;
+	margin-top: 20px;
+}
+.active_btn{
+	text-align: center;
+	margin-bottom: 95px;
+	margin-top: 50px;
+}
+.active_btn a{
+	width: 200px;
+	height: 40px;
+	background: #EB6100;
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	margin-right: 20px;
+}
+.active_box>img{
+	position: absolute;
+	top: 7px;
+	right: 14px;
+}
