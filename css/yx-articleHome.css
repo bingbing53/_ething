@@ -25,7 +25,8 @@ ul{margin: 0}
 .mainCon .crumbs p{color: #111111;}
 .mainCon .crumbs .breadcrumb{padding: 0;margin: 0;background: none;}
 .mainCon .crumbs .breadcrumb>li+li:before {content: ">";color: #eb6100}
-.mainCon .crumbs .breadcrumb a{color: #eb6100}
+.mainCon .crumbs .breadcrumb a{color: #333333}
+.mainCon .crumbs .breadcrumb a:hover{color: #eb6100}
 .mainCon .crumbs .breadcrumb>.active{color: #999999}
 .articleCarousel{width: 1000px;height: 395px;}
 .articleCarousel .item .mainImg{width: 580px;height: 395px;position: relative;}
@@ -67,7 +68,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .hotArticle .hotList .info span.share i{background-position: -40px 0 }
 .hotArticle .hotList .info span:hover.share i{background-position: -40px -20px}
 .hotArticle .hotList .info span.share{width: 85px}
-.hotArticle .hotList .info span.comment,.hotArticle .hotList .info span.collection{width: 130px;}
+.hotArticle .hotList .info span.comment,.hotArticle .hotList .info span.collection{width: 125px;}
 .hotArticle .hotList .imgBox{width: 250px;height: 155px;overflow: hidden;float: left;}
 .hotArticle .hotList .imgBox a{display: block;}
 .hotArticle .hotList .imgBox img,.hotArticle .hotCarList li img/*,.mainRight .carPicSma li img,.img_car img*/{transition: 1s;}
@@ -97,6 +98,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 /*国内新车*/
 .overflow_h{overflow: hidden;}
 .navList li{float: left;padding: 40px 18px 0px 18px;font-size: 18px;font-family: "黑体";color:#000;}
+.navList li.active a{color: #eb6100}
 .domesticCon{margin-top: -20px}
 .domesticCon h2.title{font-size: 17px;font-weight: 600;line-height: 40px}
 .domesticCon .carList li{width: 199px;float: left;border-left: 1px solid #ce5704;line-height: 35px;text-align: center;}
@@ -111,7 +113,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .mainRight .dometicPicSmall li{height: 194px}
 /*热门排行*/
 .hotRanking .title{height:42px;line-height: 40px;background:#ededed;border-top: 2px solid #dddddd }
-.hotRanking .title h3{display: inline-block;height:20px;font-size: 17px;border-left: 4px solid #eb6100;}
+.hotRanking .title h3{display: inline-block;height:20px;font-size: 17px;border-left: 4px solid #eb6100;line-height: 20px}
 .hotRanking .rankList,.hotRanking .newList{background: #f5f5f5;padding: 10px 0;overflow: hidden;margin: 0}
 .hotRanking .rankList li{width: 100%;overflow: hidden;}
 .hotRanking .rankList li a{display:inline-block;font-size: 14px;float: left;line-height: 30px;width: 210px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -166,22 +168,34 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .distrInfo .distrList li .distr_logo{width: 98px;padding: 15px 0;text-align: center;border: 1px solid #cccccc;vertical-align: middle;}
 .distrBox{width:740px;padding-bottom: 20px;border-bottom: 1px solid #cccccc}
 .distrInfo .distrList li .distr_pic{width:160px;height: 120px;overflow: hidden;position: relative;border-radius: 10px}
-.distrInfo .distrList li .distr_pic .tips{position: absolute;left: 0;top: 0;background: #eb6100;color: #ffffff;padding: 2px 5px;opacity: .7;font-size: 12px}
+.distrInfo .distrList li .distr_pic .tips,
+.dealShop ul li .shoptips
+{position: absolute;left: 0;top: 0;background: #eb6100;color: #ffffff;padding: 2px 5px;opacity: .7;filter: Alpha(opacity=70);font-size: 12px}
 .distrInfo .distrList li .distr_detail{width: 345px;padding: 0 10px 0 20px;position: relative;border-right: 1px solid #ededed}
 .distrInfo .distrList li .distr_detail .name p{font-size: 17px;line-height: 30px;margin-right: 5px}
 .distrInfo .distrList li .distr_detail .name .star img{margin:10px 0 0 0px}
 .distrInfo .distrList li .distr_address{font-size: 12px;margin-top: 10px;}
-.distrInfo .distrList li .distr_address .icon {width: 65px;}
-.distrInfo .distrList li .distr_address .icon i{display:block;width: 20px;height: 20px;background: url(../img/icon_address.png) no-repeat;margin-right: 8px}
-.distrInfo .distrList li .distr_address .tell i{background-position: -20px 0}
+/*.distrInfo .distrList li .distr_address .icon {width: 65px;}*/
+.distrInfo .distrList li .distr_address .icon i,.dealer-bot i.icon_tel{display:block;width: 20px;height: 20px;background: url(../img/icon_address.png) no-repeat;margin-right: 8px}
+.distrInfo .distrList li .distr_address .tell i,.dealer-bot i.icon_add{background-position: -20px 0}
+.distrInfo .distrList li .distr_address .good i{background-position: -40px 0}
+.distrInfo .distrList li .distr_address .good font{color: #eb6100}
 .distrInfo .distrList li .distr_address p span.add{display:inline-block;width: 208px}
+
+.dealer-bot i.icon_tel{margin: 0;background-position: -20px 0}
+.dealer-bot i.icon_add{background-position: 0 0}
+.dealer-bot a.btn_add_collect{display: block;width: 80px;height: 25px;line-height: 25px;background: #eb6100;color: #ffffff;border-radius: 10px;text-align: center;}
+.dealer-bot a:hover.btn_add_collect{background: #ce5704}
+
 .distrInfo .distrList li .distr_address a.lookMap{color: #eb6100;cursor: pointer;}
 .distrInfo .distrList li .distr_address a.lookMap:hover{color: #ce5704}
 .distrInfo .distrList li .service{font-size: 14px}
-.distrInfo .distrList li .service i{width: 20px;height: 20px;background: url(../img/icon_dealer_fun.png) no-repeat;margin-left: 5px}
-.distrInfo .distrList li .service i.quality{background-position: -20px 0}
-.distrInfo .distrList li .service i.wifi{background-position: -40px 0}
-.distrInfo .distrList li .service i.fun{background-position: -60px 0}
+.distrInfo .distrList li .service i,
+.dealShop ul li .service i,
+.dealer-bot .service i{width: 20px;height: 20px;background: url(../img/icon_dealer_fun.png) no-repeat;margin-left: 5px}
+.distrInfo .distrList li .service i.quality,.dealShop ul li .service  i.quality,.dealer-bot .service i.quality{background-position: -20px 0}
+.distrInfo .distrList li .service i.wifi,.dealShop ul li .service i.wifi,.dealer-bot .service i.wifi{background-position: -40px 0}
+.distrInfo .distrList li .service i.fun,.dealShop ul li .service i.fun,.dealer-bot .service i.fun{background-position: -60px 0}
 /*.distrInfo .distrList li .distr_sign{line-height: 40px;font-size: 14px}
 .distrInfo .distrList li .distr_certified{position: absolute;right: 10px;bottom: 10px}*/
 .distrInfo .distrList li .distr_dynamic{margin-left: 20px}
@@ -190,7 +204,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .distrInfo .distrList li .distr_dynamic ul.dynamic_list li{margin-top: 6px;font-size: 12px}
 /*经销商加盟*/
 .dealersJoin .title{height: 20px}
-.dealersJoin .title span{display: inline-block;padding-left: 10px;border-left: 5px solid #eb6100;font-size: 18px;height: 20px;line-height: 20px}
+.dealersJoin .title span{display: inline-block;padding-left: 10px;border-left: 4px solid #eb6100;font-size: 18px;height: 20px;line-height: 20px}
 .dealersJoin .distri_map{border: 1px solid #cccccc}
 .dealersJoin .distri_activity .meauList {overflow: hidden;margin: 10px 0 0 0;}
 .dealersJoin .distri_activity .meauList a{width: 120px;height:39px;font-size: 16px;float: left;line-height:40px;text-align: center;display:block;f font-size: 16px;background: #ffffff;border-bottom: 1px solid #cccccc }
@@ -263,10 +277,10 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 
 .vedioCon .vedioMeau{margin-bottom: 13px}
 .vedioCon .vedioMeau li{width: 200px;background: #f5f5f5;float: left;text-align: center;line-height: 40px;}
-.vedioCon .vedioMeau li a{display: block;font-size: 14px;height: 38px;border-bottom: 2px solid #f5f5f5}
+.vedioCon .vedioMeau li a{display: block;font-size: 14px;height: 38px;border-bottom: 2px solid #f5f5f5;transition: .5s}
 .vedioCon .vedioMeau li.active a,.vedioMeau li a:hover{font-size: 16px;background-color: #ededed;border-bottom:2px solid #eb6100;color: #eb6100}
 .vedioCon .select {padding: 20px 0;border-top: 1px solid #cccccc;}
-.vedioCon .select i{height: 20px;width: 20px;background: url(../img/icon_tips.png) no-repeat;margin-right: 5px;}
+.vedioCon .select i,.carHotTips .tipsTitle i{height: 20px;width: 20px;background: url(../img/icon_tips.png) no-repeat;margin-right: 5px;}
 .vedioCon .select .hotTips{height: 20px;font-size: 15px;color: #666666}
 .vedioCon .select p a{display: inline-block;font-size: 14px;color: #333333;line-height: 25px;margin: 0 5px;}
 .vedioCon .select p a:hover{color: #eb6100}
@@ -276,7 +290,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .vedioCon .vedioList ul li:hover{border-color: #eb6100}
 .vedioCon .vedioList ul li > a{display: block;overflow: hidden;}
 .vedioCon .vedioList ul li p{padding:2px 5px;font-size: 14px;width: 220px;}
-.vedioCon .vedioList ul li p.title{width: 220px;height:40px;overflow: hidden;}
+.vedioCon .vedioList ul li p.title{height:40px;overflow: hidden;}
 .vedioCon .vedioList ul li p i,
 .hotArticle .hotList .info .tips i,
 .articleDetails .artic .tips i
@@ -292,11 +306,17 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 /*.vedioCon .vedioList ul li p.vedioBox{height: 25px;background:#eb6100;position: absolute;top:131px;opacity: .5;color: #ffffff}*/
 .vedioCon .vedioList ul li p.vedioTime{height: 25px;position: absolute;top:135px;color: #ffffff;background: url(../img/P_bg.png) repeat-x;padding:0;width: 100%;background-size: 25px 25px;}
 .vedioCon .vedioList ul li p.vedioTime:hover{background:url(../img/bg-70.png) repeat-x;background-size: 25px 25px;}
-.vedioCon .vedioList ul li p.vedioTime span{color: #ffffff;line-height: 25px}
+.vedioCon .vedioList ul li p.vedioTime span{color: #ffffff;line-height: 25px;padding-right: 5px;}
 .vedioCon .vedioList ul li p.vedioTime span a.icon_play{display: inline-block;width: 30px;height: 15px;background: #ffffff;margin: 5px;line-height: 18px}
 .vedioCon .vedioList ul li p.vedioTime span a.icon_play i.right_tip{background: none;height: 0;width: 0; border-right: 6px solid transparent;border-top: 6px solid transparent;border-bottom: 6px solid transparent;
     border-left: 10px solid #eb6100;margin-left: 12px }
 .vedioCon .vedioList ul li:nth-child(4n){margin-right: 0}
+
+/*视频列表一行4列改为一行3列 2016.11.30修改*/
+.vedioCon .vedioList_row3 ul{margin-left: -20px}
+.vedioCon .vedioList_row3 ul li{width:318px;margin: 20px 0 0 20px;}
+.vedioCon .vedioList_row3 ul li p.vedioTime{top:190px;}
+.vedioCon .vedioList_row3 ul li p{width:auto;}
 
 /*vedioPlay 左*/
 .vedioPlay .vedioLeft .title h4{width: 430px;line-height: 25px;font-size: 23px;font-weight: 600;height: 25px;background: url(../img/icon_vedio_play.png) no-repeat 0 6px; padding-left: 30px;font-family: "黑体"}
@@ -341,7 +361,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .paramCon .carSelect a{display: block;float: left;width: 125px;height: 28px;line-height: 30px;text-align: center;border-right:1px solid #cccccc;}
 
 .vedioLeft .comment h6{font-size: 16px;font-weight: 600;line-height: 40px;border-bottom: 1px solid #dddddd}
-.vedioLeft .comment textarea{width: 96%;height: 108px;border:1px solid #dddddd;resize: none;margin:10px 0;text-indent: 1em;font-size: 14px;padding:1% 2%;outline: none;}
+.vedioLeft .comment textarea{width: 96%;height: 108px;border:1px solid #dddddd;resize: none;margin:10px 0;text-indent: 1em;font-size: 14px;padding:1% 1.8%;outline: none;}
 .vedioLeft .comment textarea:focus{border-color: #eb6100}
 .vedioLeft .comment .submitBtn{display: block;background-color: #eb6100;color: #ffffff;width: 70px;line-height: 20px;}
 .vedioLeft .comment p.line{width: 100%;height: 1px;background-color: #dddddd;margin: 40px 0 0px;}
@@ -379,7 +399,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .vedioRight .ralatedList ul li .right .play i{height: 15px;width: 15px;}
 .vedioRight .ralatedList ul li .right .play span.playTimes i{background: url(../img/icon_vedio_message.png) no-repeat -45px 0;}
 .vedioRight .ralatedList ul li .right .play span.playTime i{background: url(../img/icon_vedio_message.png) no-repeat -15px 0;}
-.vedioRight .ralatedList ul li .float_time{position: absolute;top:58px;left:80px;opacity: .7;width: 40px;height: 20px;line-height: 20px;text-align: center;background-color: #eb6100;color: #ffffff;font-size: 10px}
+.vedioRight .ralatedList ul li .float_time{position: absolute;top:58px;left:80px;opacity: .7;filter: Alpha(opacity=70);width: 40px;height: 20px;line-height: 20px;text-align: center;background-color: #eb6100;color: #ffffff;font-size: 10px}
 .ralatedList::-webkit-scrollbar-track {
 		  background-color: #cccccc;border-radius: 5px
 	} /* 滚动条的滑轨背景颜色 */
@@ -402,7 +422,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .carCon .carTitle .searchBox .btnSearch{height: 20px;width: 20px;margin: 10px 0 0 12px;background: url(../img/icon_tips.png) no-repeat -20px 0;outline: none;}
 .carCon .carCarousel{border: 1px solid #eb6100;width: 998px;height: 322px;overflow: hidden;}
 .carCon .carCarousel .carousel-inner .item img{height: 322px}
-.carCon .carCarousel .biaoti{position: absolute;width: 998px;background-color: #000;opacity: .5;height: 70px;left: 0;top: 252px;color: #f0f0f0;font-size: 30px;text-align: center;line-height: 70px}
+.carCon .carCarousel .biaoti{position: absolute;width: 998px;background-color: #000;opacity: .5;filter: Alpha(opacity=50);height: 70px;left: 0;top: 252px;color: #f0f0f0;font-size: 30px;text-align: center;line-height: 70px}
 .carCon .carCarousel .biaoti small{font-size: 20px}
 .carCon .carCarousel .carousel-control{width: 40px;}
 .carCon .carCarousel .carousel-control i{display:none;width: 40px;height: 90px;background: url(../img/icon_next_pre.png) no-repeat;position: absolute;}
@@ -454,46 +474,48 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .baike .baikeList ul li .title i.learnCar{background-position: -160px 0}
 
 /*新车首页*/
-/*left*/
-.newCarCarousel,.newCarCarousel .carousel,.newCarCarousel .carousel img{width: 740px !important;height: 380px !important;overflow: hidden;}
-{width: 740px;height: 380px}
+.newCarMeau{width: 100%;background: #eb6100;line-height: 35px;}
+.newCarMeau a{display: block;float: left;width: 90px;color: #ffffff;font-size: 14px;text-align: center;}
+.newCarMeau a.active,.newCarMeau a:hover{font-size: 16px}
+/*新车首页left*/
+.newCarCarousel,.newCarCarousel .carousel,.newCarCarousel .carousel img{width: 740px !important;height: 330px !important;overflow: hidden;}
 .newCarCarousel .carousel-indicators {bottom:-5px }
 .newCarCarousel .carousel-indicators .active{background: #eb6100;width: 10px;height: 10px}
 .newCarCarousel .carousel-indicators li{background: #cccccc;margin: 0;border:none;}
 .newCarCarousel .carousel-control{width: 40px;}
-.newCarCarousel .carousel-control i{display:none;width: 40px;height: 90px;background: url(../img/icon_next_pre.png) no-repeat;position: absolute;top: 145px;}
+.newCarCarousel .carousel-control i{display:none;width: 40px;height: 90px;background: url(../img/icon_next_pre.png) no-repeat;position: absolute;top: 125px;}
 .newCarCarousel a.right i{right: 0px;}
 .newCarCarousel a.left i{left: 0px;background-position: -40px 0;}
 .newCarCarousel .carousel-control{background: none}
-.carIntro{margin-top: 10px}
-.carIntro .carNews{width:360px;padding-top: 10px;border-top: 2px solid #dddddd;float: left;}
-.carIntro .carNews .imgCar{position: relative;width: 360px;height: 130px}
-.carIntro .carNews .imgCar span{display:block;width: 80px;height: 30px;line-height: 30px;background: #eb6100;opacity: .7;position: absolute;top: -10px;
+.newCarCarousel .carousel-inner>.item>a>img{display: block; max-width: 100%;height:330px;}
+.newCarCarousel .carousel-inner>.item>a.right>img{height: 160px}
+.carIntro{overflow: hidden;}
+.carIntro .carNews{width:338px;padding: 10px;border: 1px solid #dddddd;float: left;margin-top: 10px;}
+.carIntro .carNews .imgCar{position: relative;width: 338px;height: 230px}
+.carIntro .carNews .imgCar span{display:block;width:90px;height: 30px;line-height: 30px;background: #eb6100;opacity: .7;filter: Alpha(opacity=70);position: absolute;top: -10px;left: -10px;
 	text-align: center;font-size: 16px;color: #ffffff;}
 .carIntroList {padding: 10px;background: #f5f5f5;}
-.carIntro .carNews .title{width: 100%;height: 30px;line-height: 30px;background: #eb6100;opacity: .7;position: absolute;bottom: 0;left: 0;text-align: center;font-size: 14px;color: #ffffff;font-weight: 600}
-.carIntroList li{width: 340px;line-height: 23px;overflow: hidden;font-size: 14px;}
+/*.carIntro .carNews .title{width: 100%;height: 30px;line-height: 30px;background: #eb6100;opacity: .7;position: absolute;bottom: 0;left: 0;text-align: center;font-size: 14px;color: #ffffff;font-weight: 600}*/
+.carIntroList li{width: 320px;line-height: 23px;overflow: hidden;font-size: 14px;}
 .carIntroList li i{height: 4px;width: 2px;margin-top: 10px}
 .carIntroList li i.orange{background: #eb6100}
 .carIntroList li i.blue{background: #1e2552;margin-right: 10px}
 .carIntroList li p{font-size: 14px;display: inline-block;}
 .carIntroList li .time{color: #999999;}
 .carIntro .leftTitleImg{width: 360px;float: left;}
-.carIntro .leftTitleImg a.leftImg{display:block;width: 360px;height: 205px;float: left;overflow: hidden;}
-.carIntro .leftTitleImg a.leftImg img{transition: 1s}
-.carIntro .leftTitleImg a.leftImg:hover img{transform: scale(1.2);}
+.carIntro .leftTitleImg a.leftImg{display:block;width: 360px;/*height: 205px;*/float: left;overflow: hidden;}
 .carIntro .leftTitleImg .title{height: 41px;line-height: 41px;background: url(../img/bg_nav_bar.png) repeat-x;margin: 10px 0 19px 0;text-align: center;color: #eb6100;overflow: hidden;}
-.carIntro .leftTitleImg .title marquee{text-align: center;}
 .carIntro .leftTitleImg .title p{line-height: 25px}
 .carIntro .leftTitleImg .title a{color: #eb6100;font-size: 16px;font-weight: 600}
 .carIntro .leftTitleImg .title a:hover{color: #ce5704}
-/*right*/
+/*新车首页right*/
 .nivo .rankList {padding: 3px 0}
 .nivo .rankList li a{padding-left: 5px;font-size: 13px;color: #000;line-height: 32px}
 .nivo .rankList li a i{height: 5px;width: 5px;background: #cccccc;margin: -2px 10px 0 6px;;
     vertical-align: middle;}
 .nivo .rankList li a:hover{color: #eb6100}
 .nivo .rankList li a:hover i{background: #eb6100}
+.ceping .rankList{padding: 5px 0 9px}
 .findCar{width: 220px;padding: 10px;background: #f5f5f5}
 .findCar p{font-size: 16px;color: #000000;padding-left: 10px;border-left: 3px solid #eb6100;height: 16px;line-height: 16px;}
 .findCar .carBrand{width: 218px;height: 26px;line-height: 28px;border:1px solid #dddddd;background: #ffffff;margin-top: 10px;position: relative;}
@@ -523,12 +545,13 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .findCar .carBrand .selectBradBox .pinpaiBox dl dd,
 .findCar .carBrand .chexiBox dl dd{padding: 0 10px;;cursor: pointer;line-height: 20px}
 .findCar .carBrand .selectBradBox .pinpaiBox dl dd:hover,
-.findCar .carBrand .chexiBox dl dd:hover{color: #eb6100}
+.findCar .carBrand .chexiBox dl dd:hover{background: #eb6100;color: #ffffff}
+.findCar .carBrand .chexiBox dl dd:hover{}
 .findCar .carBrand .chexiBox dl dd span{color: #eb6100}
 
 /*查找车系弹框*/
 .findCar .carBrand .chexiBox{height: auto}
-/*新车日历*/
+/*新车首页新车日历*/
 .carCalendar h3{font-size: 18px;margin: 15px 0 0px;padding: 0 0 0 10px;font-weight: 600;border-left: 3px solid #eb6100}
 .carCalendar .month span{display: inline-block;font-size: 13px;font-weight: 600;margin: 0 10px}
 .carCalendar .month span:first-child{margin-left: 0}
@@ -546,7 +569,35 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .carCalendar .newCarList ul li .carInfo p.quote{font-size: 14px;padding: 10px 0;border-top: 1px solid #ffffff}
 .carCalendar .newCarList ul li .carInfo p.quote a{display: inline-block;padding: 0 19px;}
 .carCalendar .newCarList ul li .carInfo p.quote a.border_{border-left: 1px solid #dddddd;border-right: 1px solid #cbcbcb}
+.dealers .dealersList ul li{text-align: center;}
+.dealers .dealersList ul li .carInfo{padding:5px 0;}
+.dealers .dealersList ul li p.style a{font-size: 15px;color: #000}
+.dealers .dealersList ul li p.style a:hover{color: #eb6100}
+.dealers .dealersList ul li p.price{font-size: 16px;color: #eb6100;}
+.dealers .dealersList ul li p.price span{text-decoration: line-through;color: #666666;font-size: 12px;padding-left: 5px;}
+.dealers .dealersList ul li p.add{color: #eb6100;font-size: 12px}
+/*新车首页-热门标签*/
+.carHotTips{width: 970px;padding: 15px;background: #f5f5f5;overflow: hidden;}
+.carHotTips .tipsTitle span{font-size: 16px;color: #000}
+.carHotTips .tipsTitle i{margin-top: 2px}
+.carHotTips .tipsList{margin-left: -15px}
+.carHotTips .tipsList a{display: block;float: left;padding:5px 10px;background: #ffffff;border:1px solid #dddddd;margin: 10px 0 0 15px;font-size: 14px}
+.carHotTips .tipsList a:hover,.carHotTips .tipsList a.active{background: #eb6100;color: #ffffff;border-color: #eb6100}
 
+/*养护首页2016.11.29*/
+.dealShop{overflow: hidden;margin-left: -20px}
+.dealShop ul li{width: 320px;float: left;margin:20px 0 0 20px;position: relative;}
+.dealShop ul li h5 a{display:block;font-size: 17px;color: #000;padding:15px 0 0px;}
+.dealShop ul li .service{margin-left: 10px}
+.dealShop ul li p{font-size: 12px;margin-top: 10px;overflow: hidden;}
+.dealShop ul li p a{color: #eb6100}
+.dealShop ul li p a:hover,.dealShop ul li h5 a:hover{color: #ce5704}
+.dealShop ul li .shoptips{width: 60px;height: 30px;line-height: 30px;font-size: 18px;text-align: center;}
+.carCalendar .goodsList ul{margin-left: -20px}
+.hotgoods .goodsList ul li{width: 182px;border:1px solid #ffffff;margin:10px 0 0 20px;}
+.hotgoods .goodsList ul li img{border:1px solid #ededed;}
+.hotgoods .goodsList ul li .carInfo{width: 182px;}
+.hotgoods .goodsList ul li .carInfo .price span{text-decoration: none}
 /*ethhing 首页*/
 .ethhingCon .top_category{overflow: hidden;}
 .ethhingCon .top_category .select_car{width: 255px;padding: 15px 11px;border:1px solid #eb6100;float: left;}
@@ -707,7 +758,8 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .latestWen .img_box p.title,
 .vedioCon .vedioPhoto .mainPhoto p.title,
 .vedioCon .vedioPhoto .rightPhoto ul li p.title,
-.articleCarousel .item .mainImg p.title
+.articleCarousel .item .mainImg p.title,
+.carIntro .carNews p.title
  {position: absolute;width: 100%;line-height: 30px;height: 30px;text-align: center;bottom: 0;background: url(../img/P_bg.png) repeat-x;background-size: 40px}
 .ethhingCon .easyBuy .easyLeft .easy_img_1 p.title a,
 .ethhingCon .useCar .use_left .use_img  p.title a,
@@ -717,7 +769,8 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .latestWen .img_box p.title a,
 .vedioCon .vedioPhoto .mainPhoto p.title a,
 .vedioCon .vedioPhoto .rightPhoto ul li p.title a,
-.articleCarousel .item .mainImg p.title a
+.articleCarousel .item .mainImg p.title a,
+.carIntro .carNews p.title a
 {color: #ffffff;font-size: 14px;font-weight: 600}
 .ethhingCon .easyBuy .easyLeft .easy_img_1 p.title:hover,
 .ethhingCon .useCar .use_left .use_img  p.title:hover,
@@ -727,7 +780,8 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .latestWen .img_box p.title:hover,
 .vedioCon .vedioPhoto .mainPhoto p.title:hover,
 .vedioCon .vedioPhoto .rightPhoto ul li p.title:hover,
-.articleCarousel .item .mainImg p.title:hover
+.articleCarousel .item .mainImg p.title:hover,
+.carIntro .carNews p.title:hover
 {background: url(../img/bg-70.png) repeat-x;background-size: 40px}
 /*.ethhingCon .easyBuy .easyLeft .easy_img_1 p.titleBox,
 .ethhingCon .useCar .use_left .use_img p.titleBox,
@@ -844,7 +898,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .ethhingCon .localCar .local_right .logo_list ul li{width: 70px;text-align: center;line-height: 50px;border-left: 1px solid #dddddd;float: left;}
 .ethhingCon .localCar .local_right .dealerList ul li{padding: 12px 0;border-bottom: 1px solid #dddddd;overflow: hidden;}
 .ethhingCon .localCar .local_right .dealerList ul li .carLogo{width: 98px;height: 78px;text-align: center;line-height: 80px;border:1px solid #dddddd;position: relative;}
-.ethhingCon .localCar .local_right .dealerList ul li .carLogo p.certified{position: absolute;top:0;left: 0;width: 60px;height: 20px;line-height: 20px;background: #eb6100;text-align: center;color: #ffffff;opacity: .7}
+.ethhingCon .localCar .local_right .dealerList ul li .carLogo p.certified{position: absolute;top:0;left: 0;width: 60px;height: 20px;line-height: 20px;background: #eb6100;text-align: center;color: #ffffff;opacity: .7;filter: Alpha(opacity=70);}
 .ethhingCon .localCar .local_right .dealerList ul li .dealerInfo{width: 240px}
 .ethhingCon .localCar .local_right .dealerList ul li .dealerInfo h6{font-size: 15px;font-weight: 600;line-height: 24px}
 .ethhingCon .localCar .local_right .dealerList ul li .dealerInfo i{width: 15px;height: 15px;background: url(../img/icon_address.png) no-repeat;background-size: 30px 15px}
@@ -888,7 +942,7 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .carDetailCon .searchBox input {width: 210px;margin-left: 10px;padding:0;}
 .carDetailCon .searchBox button.searcnBtn {background-position: -20px 0;margin: 4px}
 .carDetailCon .meau ul li{width: 165px;border-color: #dddddd}
-.carDetailCon .carInfo{margin: 20px 0 0}
+.carDetailCon > .carInfo{margin: 20px 0 0}
 .carDetailCon .carInfo .pic_car{width: 300px;height: 300px;}
 
 .top_slide_wrap{width:300px;height:280px;margin:0 auto;position:relative}
@@ -965,14 +1019,14 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .carDetailCon .carPhoto .pic_box img{transition: 1s}
 .carDetailCon .carPhoto .pic_box .left_pic{width: 398px}
 .carDetailCon .carPhoto .pic_box .left_pic .top{position: relative;width: 398px;height: 256px;overflow: hidden; }
-.carDetailCon .carPhoto .pic_box .left_pic .top span{position: absolute; left: 0;bottom: 0;display: block;opacity: .8;width: 80px;height: 50px;line-height: 50px;background: #eb6100;color: #ffffff;font-size: 22px;text-align: center;}
+.carDetailCon .carPhoto .pic_box .left_pic .top span{position: absolute; left: 0;bottom: 0;display: block;opacity: .8;filter: Alpha(opacity=80);width: 80px;height: 50px;line-height: 50px;background: #eb6100;color: #ffffff;font-size: 22px;text-align: center;}
 .carDetailCon .carPhoto .pic_box .left_pic .bottom{border-top:2px solid #fff;}
 .carDetailCon .carPhoto .pic_box .right_pic{width: 600px}
 .carDetailCon .carPhoto .pic_box .right_pic ul{margin-top: -2px;}
 .carDetailCon .carPhoto .pic_box .right_pic ul li{width: 198px;height:170px;float:left;border-left: 2px solid #fff;border-top: 2px solid #fff;overflow: hidden;position: relative;}
 .carDetailCon .carPhoto .pic_box .left_pic .top img:hover,
 .carDetailCon .carPhoto .pic_box .right_pic ul li img:hover{transform: scale(1.2);}
-.carDetailCon .carPhoto .pic_box .right_pic ul li p.mask{width: 100%;height: 100%;background: #000;opacity: .7;position: absolute;left: 0;top:0;color: #ffffff;text-align: center;}
+.carDetailCon .carPhoto .pic_box .right_pic ul li p.mask{width: 100%;height: 100%;background: #000;opacity: .7;filter: Alpha(opacity=70);position: absolute;left: 0;top:0;color: #ffffff;text-align: center;}
 .carDetailCon .carPhoto .pic_box .right_pic ul li p.mask b{display: block;font-size: 36px;padding: 40px 0 5px;font-family: "黑体"}
 .carDetailCon .carPhoto .pic_box .right_pic ul li p.mask a{display: block;font-size: 16px;color: #ffffff}
 .carDetailCon .carPhoto .pic_box .right_pic ul li p.mask a:hover{color: #ecebeb}
@@ -1093,7 +1147,9 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .vedioCon .vedioPhoto .rightPhoto ul{margin: -10px 0 0 0}
 .vedioCon .vedioPhoto .rightPhoto ul li{float: left;margin:10px 0 0 10px;position: relative;height: 165px}
 .vedioCon .vedioPhoto .rightPhoto .right_ad{position: absolute;bottom: 0;right: 0}
-
+.vedioCon .vedioPhoto .mainPhoto p.title i.icon_play,
+.vedioCon .vedioPhoto .rightPhoto p.title i.icon_play
+{width: 26px;height: 26px;background: url(../img/icon_play.png);background-position: -50px 0;margin: 7px 10px 0 10px;}
 /*文章详情页修改2016.11.24*/
 .articleDetails .articleDetailRight{width: 310px}
 .articleDetails .rightCarCon .carXi .liBox{width: 130px;font-size: 12px}
@@ -1108,3 +1164,167 @@ text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-o
 .articleDetails .nr small{color: #666666}
 .articleDetails .nr p span{text-indent: 2rem;display: block;}
 .articleDetails .artic .tips {margin:-5px auto 5px;}
+
+/*易行聚落 2016.12.5*/
+.gatherCon .left{width: 745px}
+.gatherCon .gatherCarousel{width: 525px!important;height: 290px !important;}
+.gatherCon .gatherCarousel .carousel-inner>.item>a>img{width: 525px;height: 290px}
+.gatherCon .gatherCarousel .carousel-control i{top: 100px}
+.gatherCon .adList{margin-left: 10px;width: 210px;margin-top: -10px}
+.gatherCon .adList a{display: block;float: left;margin-top: 10px}
+.gatherCon .activityList ul{margin-left:-20px;overflow: hidden}
+.gatherCon .activityList ul li{width: 236px;height: 245px;overflow: hidden;margin:20px 0 0 19px;position: relative;float: left;}
+.gatherCon .activityList ul li h5{line-height: 30px;font-size: 15px;font-weight: 600;width: 216px;white-space: nowrap;}
+.gatherCon .activityList ul li .activityInfo{background: #f5f5f5;width: 216px;padding:0px 10px 5px 10px ;overflow: hidden;position: absolute;left: 0;top: 155px;transition: top .5s;}
+.gatherCon .activityList ul li p{color: #999999;overflow: hidden;width: 100%;white-space: nowrap; }
+.gatherCon .activityList ul li p span a{color: #999999;}
+.gatherCon .activityList ul li p span a:hover{color: #eb6100;}
+.gatherCon .activityList ul li p span font{color:#eb6100;}
+.gatherCon .activityList ul li p.ju_none{display: none}
+.gatherCon .activityList ul li p i{width: 15px;height: 15px;margin:2px 5px 0 0;}
+.gatherCon .activityList ul li p i.icon_ju{background: url(../img/icon_ju.png) no-repeat;background-size: 15px 15px;}
+.gatherCon .activityList ul li p i.icon_user{background: url(../img/yj_tribe.png) no-repeat;height: 16px}
+.gatherCon .activityList ul li p span.price{font-size: 18px;color: #eb6100;margin-top: -8px}
+.gatherCon .activityList ul li a.signup{display: block;width: 140px;height: 30px;line-height: 30px;font-size:14px;background: #EB6100;color: #ffffff;text-align: center;border-radius: 5px;margin:5px auto;}
+.gatherCon .activityList ul li a:hover.signup{background: #ce5704}
+.gatherCon .activityList ul li:hover .activityInfo{top:95px;}
+.gatherCon .activityList ul li:hover .activityInfo p.ju_none{display: block;}
+.gatherCon .activityList ul li p.deadline{width: 140px;height: 20px;line-height: 20px;background: #eb6100;opacity: .7;filter: Alpha(opacity=70);color: #ffffff;position: absolute;top:0;right: 0;padding:0 5px;text-align: center;}
+.gatherCon .ethingJuList ul li .activityInfo{top: 140px}
+
+.gatherCon .signUp{width: 198px;padding:40px 20px;border: 1px solid #cccccc;overflow: hidden;}
+.gatherCon .signUp .slogan{overflow: hidden;margin-left: 30px}
+.gatherCon .signUp .slogan .icon_ju{width: 50px;height: 50px;background: url(../img/icon_ju.png) no-repeat;margin-right: 5px}
+.gatherCon .signUp .slogan p b{color: #666666;font-size: 20px;}
+.gatherCon .signUp .slogan p {color: #cccccc;font-size:12px }
+.gatherCon .signUp .release{margin-top: 50px;width: 90px;}
+.gatherCon .signUp .release a{display: block;}
+.gatherCon .signUp .release i{display:block;width:65px;height:65px;background: url(../img/icon_signup.png) no-repeat;margin: 0 auto}
+.gatherCon .signUp .release span{display:block;width:88px;border:1px solid #cccccc;text-align: center;height: 25px;line-height: 25px;font-size: 14px;border-radius: 5px;color: #999999;margin-top: 16px }
+.gatherCon .signUp .release a:hover span,.gatherCon .signUp .release a.active span{background: #eb6100;border-color: #eb6100;color: #ffffff}
+.gatherCon .signUp .release i.icon_release{background-position:-65px 0;}
+.gatherCon .signUp .release a:hover i.icon_release,.gatherCon .signUp .release a.active i.icon_release{background-position:0 0;}
+.gatherCon .signUp .release i.icon_sign{background-position:-195px 0;}
+.gatherCon .signUp .release a:hover i.icon_sign,.gatherCon .signUp .release a.active i.icon_sign{background-position:-130px 0;}
+
+/*活动详情页 2016.12.6*/
+.actDetailCon .actInfo .mainImg{position: relative;margin-right: 30px}
+.actDetailCon .actInfo .mainImg p{position: absolute;left: 0;top: 0;background: #eb6100;padding: 5px;color: #ffffff;opacity: .7;filter: Alpha(opacity=70); }
+.actDetailCon .infoCon{width: 550px}
+.actDetailCon .infoCon h2{font-weight:400;font-size: 30px;}
+.actDetailCon .infoCon .actTime{overflow: hidden;line-height: 30px;margin-top: 10px}
+.actDetailCon .infoCon .actTime i.iconTime{width: 30px;height: 30px;background: url(../img/icon_time.png) no-repeat;margin-right: 10px}
+.actDetailCon .infoCon .actTime span{display: inline-block;font-size: 16px}
+.actDetailCon .infoCon .actTime span.name,.actDetailCon .infoCon .infoList li span.name{color: #999999}
+.actDetailCon .infoCon .actTime span.time,.actDetailCon .infoCon .infoList li span.time{color: #000000}
+.actDetailCon .infoCon .signUpNow{margin-top: 10px;overflow: hidden;padding-bottom: 5px;border-bottom: 1px solid #ededed}
+.actDetailCon .infoCon .signUpNow p.price{color: #eb6100;font-size: 30px}
+.actDetailCon .infoCon .signUpNow a.btnSign{display: block;width: 200px;height: 40px;line-height: 40px;color: #ffffff;background: #eb6100;border-radius: 5px;text-align: center;font-size: 16px;margin-top: 8px}
+.actDetailCon .infoCon .signUpNow a:hover.btnSign{background: #ce5704}
+.actDetailCon .infoCon .signUpNow a.btnDisabled{background: #cccccc;cursor: default}
+.actDetailCon .infoCon .signUpNow a:hover.btnDisabled{background: #cccccc;}
+.actDetailCon .infoCon .infoList li{width: 50%;float: left;line-height: 22px;font-size: 14px;margin-top: 15px}
+.actDetailCon .infoCon .infoList li i{width: 20px;height: 22px;background: url(../img/icon_activity.png) no-repeat;margin-right: 10px}
+.actDetailCon .infoCon .infoList li i.icon_person{background-position: -20px 0}
+.actDetailCon .infoCon .infoList li i.leader{background-position: -40px 0}
+.actDetailCon .infoCon .infoList li i.icon_classify{background-position: -80px 0}
+.actDetailCon .infoCon .infoList li i.icon_place{background-position: -60px 0}
+
+.actDetailCon .leaderCon{padding: 23px;border:1px solid #cccccc;overflow: hidden;margin:20px auto;}
+.actDetailCon .leaderCon img{display: block;}
+.actDetailCon .leaderCon .leaderName{width: 310px;margin: 0 30px}
+.actDetailCon .leaderCon .leaderName h4{font-size: 20px;color: #000000}
+.actDetailCon .leaderCon .leaderName .leaderTitle,
+.juDetailCon .juluoInfo .right .leaderName .leaderTitle{line-height: 22px;overflow: hidden;margin-top: 10px}
+.actDetailCon .leaderCon .leaderName .leaderTitle i,
+.juDetailCon .juluoInfo .right .leaderName .leaderTitle i{height: 22px;width: 20px;background: url(../img/icon_activity.png) no-repeat;margin-right: 10px;background-position: -100px 0}
+.actDetailCon .leaderCon .leaderName .times{margin-top: 35px}
+.actDetailCon .leaderCon .leaderName .times p span{color: #eb6100}
+.actDetailCon .leaderCon .leaderData{padding-left: 60px;border-left: 1px solid #cccccc;width: 366px;margin:0 0 0 30px;}
+.actDetailCon .leaderCon .leaderData .list_leader{margin-top: 10px}
+.actDetailCon .leaderCon .leaderData .list_leader li{width: 50%;float: left;margin-top: 10px;color: #999999}
+.actDetailCon .leaderCon .leaderData .list_leader li span{color: #333333}
+.actDetailCon .entryList .eTitle h5{font-size: 18px;margin-right: 40px;}
+.actDetailCon .entryList .eTitle p{margin-left: 10px}
+.actDetailCon .entryList .eTitle p span{margin:0 5px;display: inline-block;}
+.actDetailCon .entryList .eTitle i{font-size: 14px;color: #eb6100}
+.actDetailCon .entryList .eTitle p.radioBox{position: relative;}
+.actDetailCon .entryList .eTitle p.radioBox span{margin:0 10px 0 15px;}
+.actDetailCon .entryList .eTitle p.radioBox input.radio1{position: absolute;left: 0;top:0px;z-index: 10;opacity: 0}
+.actDetailCon .entryList .eTitle p.radioBox input.radio2{position: absolute;left: 44px;top:0px;z-index: 10;opacity:0 }
+.actDetailCon .entryList .eTitle p.radioBox input.radio3{position: absolute;left: 88px;top:0px;z-index: 10;opacity:0 }
+.actDetailCon .entryList .eTitle p.radioBox input.radio4{position: absolute;left: 132px;top:0px;z-index: 10;opacity:0 }
+.actDetailCon .entryList .eTitle p.radioBox input.radio1 + a,
+.actDetailCon .entryList .eTitle p.radioBox input.radio2 + a,
+.actDetailCon .entryList .eTitle p.radioBox input.radio3 + a,
+.actDetailCon .entryList .eTitle p.radioBox input.radio4 + a
+{display:inline-block;width:10px;height:10px;position: absolute;left: 0;top:0px;margin: 4px 0 0;border:1px solid #ccc;border-radius: 50%;z-index: 9}
+.actDetailCon .entryList .eTitle p.radioBox input.radio2 + a{left: 44px}
+.actDetailCon .entryList .eTitle p.radioBox input.radio3 + a{left: 88px}
+.actDetailCon .entryList .eTitle p.radioBox input.radio4 + a{left: 132px}
+.actDetailCon .entryList .eTitle p.radioBox input.radio1:checked + a,
+.actDetailCon .entryList .eTitle p.radioBox input.radio2:checked + a,
+.actDetailCon .entryList .eTitle p.radioBox input.radio3:checked + a,
+.actDetailCon .entryList .eTitle p.radioBox input.radio4:checked + a{background: #eb6100;border-color: #eb6100}
+
+.actDetailCon .entryList .table {margin:20px 0 10px;font-size: 14px}
+.actDetailCon .entryList .table thead td{padding:8px;font-size: 15px;}
+.actDetailCon .entryList .table td{width: 166px;border:1px solid #cccccc;text-align: center;padding: 6px}
+.actDetailCon .routing h4{width: 658px;background: #f5f5f5;border:1px solid #cccccc;text-align: center;line-height: 30px;font-size: 14px;margin: 10px 0 20px;}
+.actDetailCon .routing article{width: 600px;padding:9px 29px 19px;border:1px solid #cccccc;margin-top: 10px;font-size: 12px;color: #666666;text-align: justify;}
+.actDetailCon .routing article p{margin-top: 10px}
+
+.actDetailCon .otherAct{width: 310px}
+.actDetailCon .otherAct .activityList ul li{width: 310px;height: 340px}
+.actDetailCon .otherAct .activityList ul li .activityInfo{width:290px;top: 205px}
+.actDetailCon .otherAct .activityList ul li:hover .activityInfo,.juDetailCon .actPublish ul li:hover .activityInfo{top:140px;}
+.actDetailCon .otherAct .activityList ul li h5,.juDetailCon .actPublish ul li h5{margin-top: 10px;font-size: 16px}
+.actDetailCon .otherAct .activityList ul li p,.juDetailCon .actPublish ul li p{margin-top: 10px}
+.actDetailCon .otherAct .activityList ul li p.deadline,.juDetailCon .actPublish ul li p.deadline {margin-top: 0}
+/*活动总结页 2016.12.6*/
+.actDetailCon .actSummary .summList > li{margin-top: 20px;position: relative;overflow: hidden;}
+.actDetailCon .actSummary .summList > li .none{display: none}
+.actDetailCon .actSummary .summList > li p.brief{padding: 10px;width: 220px;background: #f5f5f5}
+.actDetailCon .actSummary .summList > li .right {width: 730px}
+.actDetailCon .actSummary .summList > li .right h2{background: #f5f5f5;line-height: 50px;font-size: 18px;color: #eb6100;padding-left: 20px}
+.actDetailCon .actSummary .summList > li .right .info_act .headImg{border-radius: 50%}
+.actDetailCon .actSummary .summList > li .right .info_act p{color: #999999;line-height: 30px}
+.actDetailCon .actSummary .summList > li .right .paragraph p{margin-top: 10px}
+.actDetailCon .actSummary .summList > li .right .paragraph span{display: block;}
+.actDetailCon .actSummary .summList > li .right a.lookall{color: #eb6100;}
+.actDetailCon .actSummary .summList > li .right a:hover.lookall{color: #ce5704;}
+.actDetailCon .actSummary .summList > li .right a.lookall i{width: 10px;height: 10px;background: url(../img/icon_top_tip.png) no-repeat;margin-left: 5px}
+.actDetailCon .actSummary .addComment{padding: 9px;border:1px solid #ededed;margin-top: 10px;position: relative;height: 195px}
+.actDetailCon .actSummary .addComment textarea{width: 980px;height: 140px;font-size: 14px;outline: none;resize: none}
+.actDetailCon .actSummary .addComment .bg_file{width: 150px;height: 50px;border:1px solid #cccccc;border-radius: 5px;line-height: 50px;color: #eb6100;font-size: 20px;position: absolute;left: 10px;bottom: 10px;cursor: pointer;}
+.actDetailCon .actSummary .addComment .bg_file i{width: 30px;height: 24px;background: url(../img/icon_img_file.png) no-repeat;margin: 13px 13px 0 16px;}
+.actDetailCon .actSummary .addComment input.file{width: 150px;height: 50px;position: absolute;left: 10px;bottom: 10px;outline: none;opacity: 0}
+.actDetailCon .actSummary .addComment a.publish{width: 70px;height: 20px;line-height: 20px;background: #eb6100;color: #ffffff;position: absolute;bottom:-30px;right: 0;text-align: center;}
+.actDetailCon .actSummary .addComment a:hover.publish{background: #ce5704}
+
+/*聚落详情页 2016.12.7*/
+.juDetailCon .juluoInfo{padding: 9px;border:1px solid #cccccc;;overflow: hidden;}
+.juDetailCon .juluoInfo .center{width: 355px;padding: 0 19px 0 20px;border-right: 1px solid #ededed;margin-right: 20px}
+.juDetailCon .juluoInfo .center h2{font-size: 24px;overflow: hidden;margin: 15px 0 5px}
+.juDetailCon .juluoInfo .center i{height: 20px;width: 20px;background: url(../img/icon_ju.png) no-repeat;background-size: 20px 20px;margin:3px 10px 0 0;}
+.juDetailCon .juluoInfo .center p{color: #cccccc;margin-top: 10px;font-size: 14px}
+.juDetailCon .juluoInfo .center p small{color: #999999}
+.juDetailCon .juluoInfo .center p span{color: #666666}
+.juDetailCon .juluoInfo .center .c_left{width: 200px}
+.juDetailCon .juluoInfo .center .c_right{width: 155px}
+.juDetailCon .juluoInfo .center a.btn_collect{display: block;width: 100px;height: 30px;line-height: 30px;text-align: center;background: #eb6100;color: #ffffff;border-radius: 5px;font-size: 14px;margin-top: 30px}
+.juDetailCon .juluoInfo .center a:hover.btn_collect{background: #ce5704}
+.juDetailCon .juluoInfo .right {width: 265px;}
+.juDetailCon .juluoInfo .right img{display: block;margin-right: 20px}
+.juDetailCon .juluoInfo .right h3{font-size: 18px;margin-bottom: 20px}
+.juDetailCon .juluoInfo .right .leaderName h4{font-size: 18px;margin-top: 10px}
+.juDetailCon .juluoInfo .right .infoList p{float: left;font-size: 12px;color: #999999;margin-top: 10px}
+.juDetailCon .juluoInfo .right .infoList p:nth-child(2n){width:105px }
+.juDetailCon .juluoInfo .right .infoList p:nth-child(2n+1){width: 160px}
+.juDetailCon .juluoInfo .right .infoList p span{color: #000000}
+.juDetailCon .juluoInfo .right .infoList p font{color: #eb6100}
+
+.juDetailCon .actAct ul li{width: 326px}
+.juDetailCon .actPublish ul li{width: 320px;height: 340px}
+.juDetailCon .actPublish ul li .activityInfo{width: 300px;top:205px;}
+.juDetailCon .actPublish ul li:hover .activityInfo{top:140px;}

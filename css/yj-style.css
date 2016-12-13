@@ -653,7 +653,7 @@ a.loadMore:hover {
 .active_box2{
 	height: 190px;
 }
-.active_r a{
+.active_r .active_upload{
 	width: 50px;
 	height:20px;
 	background: #EB6100;
@@ -664,6 +664,17 @@ a.loadMore:hover {
 	text-align: center;
 	line-height: 20px;
 	margin-left: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.active_upload  input,.active_pic_add input {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer
 }
 .active_r .yulan{
 	width: 50px;
@@ -675,7 +686,6 @@ a.loadMore:hover {
 	width: 180px;
 	height: 140px;
 	display: inline-block;
-	border: 1px solid #ccc;
 	float: left;
 	margin-top: -50px;
 	margin-left: 90px;
@@ -697,7 +707,8 @@ a.loadMore:hover {
 	font-weight: normal;
 	margin-left: 30px;
 }
-input[type=checkbox]{
+input[type=checkbox],
+input[type=radio]{
 	margin-top: 0;
 	margin-right: 5px;
 }
@@ -732,6 +743,13 @@ input[type=checkbox]{
 	text-align: center;
 	line-height: 50px;
 	font-weight: 700;
+}
+.active_pic_add_up{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top:0 ;
+	left: 0;
 }
 .active_content p{
 	font-size: 12px;

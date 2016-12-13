@@ -265,18 +265,7 @@ i.stretch_1 {
 .middle_m_r .carousel img {
     float: left;
 }
-.middle_m_r .carousel .img1 {
-    width: 497px;
-    height: 377px;
-}
-.middle_m_r .carousel .img2 {
-    width: 258px;
-    height: 183px;
-}
-.middle_m_r .carousel .img3 {
-    width: 258px;
-    height: 184px;
-}
+
 .middle_m_r .carousel .pic_r {
     margin-right: 10px;
 }

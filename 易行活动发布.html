@@ -188,13 +188,36 @@
                     <div class="active_box2">
                         <span class="fl bixuan">*</span>
                         <span class="fl">活动头像：</span>
-                        <a href="#">上传</a>
+                        <a href="#" class="active_upload">
+                            <input type="file" name="file0" id="file0"  />上传
+                        </a>
                         <p class="yulan">预览：</p>
-                        <span class="yl_p"></span>
-
+                        <img  class="yl_p" src="" id="img0" >
                     </div>
                 </div>
             </div>
+            <!--上传-->
+            <script>
+                $("#file0").change(function(){
+                    var objUrl = getObjectURL(this.files[0]) ;
+                    console.log("objUrl = "+objUrl) ;
+                    if (objUrl) {
+                        $("#img0").attr("src", objUrl) ;
+                    }
+                }) ;
+                //建立一個可存取到該file的url
+                function getObjectURL(file) {
+                    var url = null ;
+                    if (window.createObjectURL!=undefined) { // basic
+                        url = window.createObjectURL(file) ;
+                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                        url = window.URL.createObjectURL(file) ;
+                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                        url = window.webkitURL.createObjectURL(file) ;
+                    }
+                    return url ;
+                }
+            </script>
             <div class="row">
                 <div class="col-md-9">
                     <div class="active_data">
@@ -216,16 +239,40 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="active_content">
             <textarea name="active_content" cols="30" rows="10" placeholder="活动内容"></textarea>
-            <a class="active_pic_add">
+            <!--<img src="" alt="" id="img1" class="active_pic_add_up">-->
+            <a class="active_pic_add" >
+                <input type="file" id="file1">
                 <img src="img/active_pic.jpg" >
                 添加图片
             </a>
-            <p>免责声明：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我已阅读</p>
+            <p>免责声明：<input type="radio">我已阅读</p>
         </div>
+        <!--<script>-->
+            <!--$("#file1").change(function(){-->
+                <!--var objUrl = getObjectURL(this.files[0]) ;-->
+                <!--console.log("objUrl = "+objUrl) ;-->
+                <!--if (objUrl) {-->
+                    <!--$("#img1").attr("src", objUrl) ;-->
+                <!--}-->
+            <!--}) ;-->
+            <!--//建立一個可存取到該file的url-->
+            <!--function getObjectURL(file) {-->
+                <!--var url = null ;-->
+                <!--if (window.createObjectURL!=undefined) { // basic-->
+                    <!--url = window.createObjectURL(file) ;-->
+                <!--} else if (window.URL!=undefined) { // mozilla(firefox)-->
+                    <!--url = window.URL.createObjectURL(file) ;-->
+                <!--} else if (window.webkitURL!=undefined) { // webkit or chrome-->
+                    <!--url = window.webkitURL.createObjectURL(file) ;-->
+                <!--}-->
+                <!--return url ;-->
+            <!--}-->
+        <!--</script>-->
 
         <div class="row">
             <div class="active_btn">
