@@ -1,0 +1,286 @@
+/*logo*/
+body{
+    padding-top: 0;
+}
+.logo{
+    border: none;
+    height: 70px;
+}
+.logo span{
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.logo span a{
+    color: #868686;
+    font-size: 12px;
+
+}
+.logo span a:hover{
+    color: #EB6100;
+}
+.logo span a:hover i{
+    background: url("../img/go_home_h.png");
+}
+.logo span i{
+    background: url("../img/go_home.png");
+    width: 16px;
+    height: 15px;
+    display: inline-block;
+    float: left;
+    margin-top: 1px;
+    margin-right: 5px;
+}
+.total_logo{
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+
+/*注册主体*/
+.register_back{
+    background: url("../img/register_back.jpg") no-repeat;
+    width: 100%;
+    min-height: 730px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    /*box-shadow: 5px 0px #CCCCCC;*/
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.wrapper form.register{
+    width: 380px;
+    height: 690px;
+    border: 1px solid #CCCCCC;
+    float: right;
+    margin-top: 20px;
+    background: #FFFFFF;
+    padding: 0 20px;
+}
+.wrapper form h1{
+    font-size: 20px;
+    color: #868686;
+    padding: 29px 0;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+ }
+.wrapper form input,.wrapper form button{
+    border: 1px solid #868686;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #999;
+    outline: none;
+}
+ .wrapper form input.form_normal{
+     width: 338px;
+     height: 40px;
+ }
+.wrapper form input.form_code{
+    width: 218px;
+    height: 40px;
+    margin-right: 16px;
+}
+.wrapper form input.form_btn{
+    width: 100px;
+    height: 40px;
+    background: #FFFFFF;
+    color: #666;
+}
+.wrapper form button{
+    width: 338px;
+    height: 40px;
+    background: #EB6100;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 0;
+}
+.wrapper form .form_check{
+    margin-top: 10px;
+    color: #868686;
+    margin-bottom: 80px;
+}
+.wrapper form input.chk{
+    margin-top: -2px;
+    margin-right: 10px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #868686;
+    outline: none;
+
+}
+.wrapper form input.chk:checked{
+    background: url("../img/register_chk.png");
+    border:none;
+    background-size: cover;
+    outline: none;
+}
+.wrapper form .form_other{
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.wrapper form .form_other p{
+    display: inline-block;
+    margin: 0 10px;
+    color: #999;
+}
+.wrapper form .form_other span{
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #ededed;
+    margin-bottom: 4px;
+}
+.form_other div{
+    text-align: left;
+}
+.form_other div a{
+    display: inline-block;
+    margin: 40px 20px 0 50px;
+}
+.form_other div a.weibo{
+    background: url("../img/dl-img/weibo.png") no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 29px;
+
+}
+.form_other div a.weibo:hover{
+    background: url("../img/dl-img/weibo_o.png");
+}
+.form_other div a.qq{
+    background: url("../img/dl-img/qq.png") no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 29px;
+}
+.form_other div a.qq:hover{
+    background: url("../img/dl-img/qq_o.png");
+}
+.form_other div a.weixin{
+    background: url("../img/dl-img/weixin.png") no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 30px;
+}
+.form_other div a.weixin:hover{
+    background: url("../img/dl-img/weixin_o.png");
+}
+
+
+/*登录主体*/
+.subject{
+    height: 530px;
+    width: 380px;
+    border: 1px solid #CCCCCC;
+    float: right;
+    margin-top: 20px;
+    background: #FFFFFF;
+    padding: 0 20px;
+}
+.wrapper form.login,.wrapper form.dynamic{
+    position: relative;
+}
+.subject .login_title{
+    overflow: hidden;
+}
+.subject .login_title a{
+    border: none;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    color: #868686;
+    padding: 25px 0;
+}
+.subject .login_title a.login_active{
+    border-bottom: 2px solid #eb6100;
+    color: #EB6100;
+}
+.login input.form_normal{
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.login i{
+    display: inline-block;
+}
+.login_user{
+    position: absolute;
+    top: 41px;
+    left: 8px;
+    background: url("../img/login_icon.png") no-repeat 0 -1px;
+    width: 17px;
+    height: 19px;
+}
+.login_pwd{
+    position: absolute;
+    top: 110px;
+    left: 8px;
+    background: url("../img/login_icon.png") no-repeat -23px -2px;
+    width: 15px;
+    height: 18px;
+}
+.login .form_check a{
+    color: #EB6100;
+    float: right;
+    margin-left: 15px;
+}
+form.login  div.form_check{
+    margin-bottom: 35px;
+}
+form.login>button{
+    margin-bottom: 55px;
+}
+
+#login{
+    display: none;
+}
+
+
+.dynamic .login_user{
+    background: url("../img/login_icon.png") no-repeat -39px 0;
+    width: 14px;
+    height: 20px;
+}
+.dynamic .form_code{
+    padding-left: 10px;
+}
+form.dynamic>button{
+    margin-top: 40px;
+    background: #FFFFFF;
+    color: #868686;
+    border: 1px solid #868686;
+    margin-bottom: 0px;
+}
+form.dynamic  div.form_check a{
+    float: none;
+}
+form.dynamic  div.form_check{
+    margin-bottom: 80px;
+    text-align: right;
+}
+
+/*用户中心忘记密码*/
+.forget_pwd{
+    
+}
+
+
+/*底部*/
+.footer {
+    position: relative;
+    z-index: 100;
+    height: 60px;
+    padding-top: 1px;
+}
+.mt10{
+    margin-top: 0;
+}
