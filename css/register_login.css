@@ -269,8 +269,133 @@ form.dynamic  div.form_check{
 }
 
 /*用户中心忘记密码*/
+.appeal{
+    width: 100%;
+    min-height: 730px;
+    margin: 0 auto;
+    /*border-top: 1px solid #868686;*/
+    box-shadow: 0 1px 20px #868686;
+}
 .forget_pwd{
-    
+    text-align: center;
+}
+.forget_pwd ul{
+    float: left;
+    margin: 100px 50px 85px;
+    border-bottom: 1px solid #d4d4d4;
+    /*padding-bottom: 50px;*/
+    padding: 0 10px 90px;
+}
+.forget_pwd ul li{
+    float: left;
+    position: relative;
+}
+.ing>div{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 10px;
+}
+.ing>div div{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 0 auto;
+    line-height: 30px;
+    margin-top: 4px;
+    text-align: center;
+}
+.ing p{
+    float: left;
+    position: absolute;
+    top: 55px;
+    left: -8px;
+    width: 80px;
+    text-align: center;
+    font-size: 16px;
+}
+.com_t{
+    color: #EB6100;
+}
+.ing_t{
+    color: #d4d4d4;
+}
+.com_s_1{
+    border: 1px solid #EB6100;
+}
+.com_s_2{
+    background: #EB6100;
+}
+.ing_s_1{
+    border: 1px solid #d4d4d4;
+}
+.ing_s_2{
+    background: #d4d4d4;
+}
+.ing div div span{
+    font-size: 18px;
+    color: #ffffff;
+}
+.com_d{
+    letter-spacing: 1px;
+    color: #EB6100;
+    /*font-size: 12px;*/
+}
+.com_lt{
+    font-family: "黑体";
+    color: #EB6100;
+}
+.ing_d{
+    letter-spacing: 1px;
+    color: #d4d4d4;
+    font-size: 12px;
+}
+.forget_pwd form{
+    width: 445px;
+    height: 280px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.forget_pwd form span{
+    font-size: 16px;
+    color: #666;
+    margin-top: 30px;
+    float: left;
+    margin-right: 8px;
+    width: 96px;
+    text-align: right;
+}
+.forget_pwd form button{
+    margin-left: 104px;
+}
+.forget_pwd form p{
+    font-size: 16px;
+    color: #333;
+    margin-left: 104px;
+    margin-top: 10px;
+}
+.forget_pwd>h2{
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.forget_pwd>h4{
+    font-size: 16px;
+    color: #666;
+    margin-top: 18px;
+}
+.forget_pwd>button{
+    width: 338px;
+    height: 40px;
+    background: #EB6100;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 0;
+    outline: none;
+    margin-top: 30px;
 }
 
 

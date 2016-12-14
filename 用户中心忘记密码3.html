@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>用户忘记密码3</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/register_login.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--start logo-->
+<div class="wrapper">
+    <div class="logo">
+        <img class="total_logo" src="img/logo.png" width="120" height="40" />
+        <span>
+            <a href="#">
+                <i></i>
+                返回首页
+            </a>
+
+        </span>
+    </div>
+</div>
+<!--end logo-->
+
+<!--主体-->
+<div class="appeal">
+    <div class="wrapper">
+        <div class="forget_pwd" >
+            <ul>
+                <li class="ing">
+                    <div class="com_s_1">
+                        <div class="com_s_2">
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <p class="com_t">输入账户名</p>
+                    <span class="com_d">•••••••••••••••••••••••••••••••••••</span>
+                </li>
+                <li class="ing">
+                    <div class="com_s_1">
+                        <div class="com_s_2">
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <p class="com_t">验证身份</p>
+                    <span class="com_d">•••••••••••••••••••••••••••••••••••</span>
+
+                </li>
+                <li class="ing">
+                    <div class="com_s_1">
+                        <div class="com_s_2">
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <p class="com_t">重置密码</p>
+                    <span class="com_d">••••••••••••••••</span>
+                    <span class="com_lt"> > </span>
+                    <span class="ing_d">••••••••••••••••</span>
+                </li>
+                <li class="ing">
+                    <div class="ing_s_1">
+                        <div class="ing_s_2">
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <p class="ing_t">完成</p>
+                </li>
+            </ul>
+            <form action="">
+                <span>新密码：</span><input type="password" class="form_normal"><br>
+                <span>确认密码：</span><input type="password" class="form_normal"><br>
+                <span>验证码：</span><input type="text" placeholder="请输入验证码" class="form_code">
+                <input type="button" class="form_btn"><br>
+
+                <button>下一步</button>
+
+            </form>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<!--底部-->
+<div class="footer mt10">
+    <div class="wrapper">
+        <p>版权所有：北京易行互动科技有限公司 电话：010-85072077 　© 2016 www.ething.net 京ICP证150082号 公网安备 11010802020186号<i class="icon_gaj"></i></p>
+    </div>
+</div>
+
+<script>
+    //    背景图
+    var back_h=$(window).height()-61-70;
+    console.log(back_h);
+    $(".register_back").css("height",back_h);
+    $(".appeal").css("height",back_h);
+
+</script>
+
+</body>
+</html>
