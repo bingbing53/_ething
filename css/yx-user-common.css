@@ -27,7 +27,7 @@ by dongxiao
 .personalInfo .headName p.user_message i.icon_ti{background-position: -50px 0}
 
 /*个人中心 左侧公共菜单*/
-.asideMeau{width: 150px;margin: 0px 30px 55px 10px;}
+.asideMeau{width: 150px;margin: 0px 30px 45px 10px;}
 .asideMeau .meau .meauTitle{font-size: 16px;font-weight: 500;padding: 10px 0 9px;border-bottom: 1px solid #dddddd;height: 30px;position: relative;}
 .asideMeau .meau .meauTitle::after{content: '';display: inline-block;width: 0;height: 0;border-top:5px solid #dddddd;border-bottom: 5px solid transparent;border-left: 5px solid transparent;border-right: 5px solid transparent;position: absolute;bottom: -10px;right: 0}
 .asideMeau .meau .meauTitle i{height: 23px;width: 25px;background: url(../img/icon_user_meau.png) no-repeat;margin: 1px 20px 0 0;}
@@ -77,3 +77,29 @@ by dongxiao
 .asideMeau .meau ul li:hover i.icon_password,.asideMeau .meau ul li.active i.icon_password{background-position: -96px -55px}
 .asideMeau .meau ul li i.icon_lovecar{background-position: -112px -71px;}
 .asideMeau .meau ul li:hover i.icon_lovecar,.asideMeau .meau ul li.active i.icon_lovecar{background-position: -112px -55px}
+
+/*页码*/
+.page {
+ height: 100px;
+ text-align: center;
+}
+.page ul{
+ /*margin: 0 auto;*/
+ display: inline-block;
+}
+.page ul li{
+ float: left;
+ display: inline-block;
+ border: 1px solid #ededed;
+ background: #f5f5f5;
+ margin: 0 5px;
+}
+.page li a{
+ font-size: 12px;
+ color: #000;
+ padding: 2px 5px;
+}
+.page .active a{
+ background: #EB6100;
+ color: #fff;
+}

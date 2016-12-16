@@ -44,6 +44,7 @@
     float: right;
     font-size: 16px;
     color: #EB6100;
+    margin-top: 15px;
 }
 /*我的评论*/
 .my_comments .system_head{
@@ -54,30 +55,67 @@
     margin-bottom: 25px;
     position: relative;
 }
-.my_comments li div h2{
+.msg_peo{
     font-size: 14px;
     color: #999;
-    margin: 15px 0 23px;
+    margin: 15px 0 20px;
 }
-.my_comments li div h2 a{
+.pro_title{
     font-size: 18px;
     color: #EB6100;
+    letter-spacing: 1px;
 }
-.my_comments li div p{
-    font-size: 18px;
+.my_comments li div h4{
+    font-size: 16px;
     color: #666;
 }
-.my_comments li>span{
+.pro_com{
+    font-size: 18px;
+    color: #666;
+    letter-spacing: 1px;
+}
+.pro_time{
     font-size: 14px;
     color: #999;
     margin-right: 15px;
+    margin-top: 15px;
 }
 .msg_title{
     background: #f5f5f5;
     margin-top: 23px;
-    width: 690px;
-    padding: 10px 0;
-    position: absolute;
-    top: 1px;
-    left: 1px;
+    width: 712px;
+    padding: 10px 0 15px 10px;
+    margin-left: 78px;
+}
+li div.msg_title h2{
+    color: #666;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+div.page ul{
+    margin-top: 20px;
+}
+/*提到我的*/
+.mention_me .system_head {
+    width: 50px;
+    height: 50px;
+}
+.mention_me li div h4{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+.mention_me ul li{
+    margin-bottom: 25px;
+}
+.mention_me ul li div h2{
+    margin-top: 2px;
+}
+.mention_me_seat{
+    height: 800px;
+    line-height: 800px;
+    text-align: center;
+    color: #999;
+    font-size: 30px;
 }

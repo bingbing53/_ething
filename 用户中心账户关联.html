@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>用户中心系统消息</title>
+    <title>用户中心账户管理</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/yx-user-common.css" />
-    <link rel="stylesheet" type="text/css" href="css/msg-center.css" />
+    <link rel="stylesheet" type="text/css" href="css/account-management.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
@@ -144,7 +144,7 @@
                         <span class="fl right_tip">></span>
                     </a>
                 </li>
-                <li class="active">
+                <li class="">
                     <a href="#">
                         <i class="fl icon_ti"></i>
                         <span href="#" class="fl">提到我的</span>
@@ -261,7 +261,7 @@
                         <span class="fl right_tip">></span>
                     </a>
                 </li>
-                <li class="">
+                <li class="active">
                     <a href="#">
                         <i class="fl icon_relation"></i>
                         <span href="#" class="fl">账户关联</span>
@@ -291,12 +291,34 @@
 
 
     <!--右侧主体-->
-    <div class="msg_center fl">
-        <h1>提到我的</h1>
-        <div class="mention_me_seat">
-            <p>亲爱的行友，你还没有任何评论的消息。</p>
+    <div class="account_management fl">
+
+        <h1>账户关联</h1>
+        <h2>社交账号</h2>
+
+        <div class="account_relation">
+
+            <p>绑定手机和邮箱，登陆更方便，账号更安全</p>
+
+            <div>
+                <div>
+                    <i class="phone"></i>
+                </div>
+
+                <span>12354695231</span>
+            </div>
+
+            <div>
+                <div>
+                    <i class="email"></i>
+                </div>
+
+                <span>尚未绑定邮箱</span>
+            </div>
 
         </div>
+
+
     </div>
 
 
@@ -334,6 +356,8 @@
     </div>
 </div>
 <!--end footer -->
+
+
 
 </body>
 </html>
