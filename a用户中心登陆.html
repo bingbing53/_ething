@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/register_login.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/get-code.js"></script>
 </head>
 <body>
 
@@ -50,8 +51,8 @@
 
                 <div class="form_check">
                     <input type="checkbox" class="chk">下次自动登陆
-                    <a href="#">立即注册</a>
-                    <a href="#">忘记密码？</a>
+                    <a href="a用户中心注册.html">立即注册</a>
+                    <a href="a用户中心忘记密码1.html">忘记密码？</a>
 
                 </div>
 
@@ -76,12 +77,12 @@
                 <i class="login_user"></i>
                 <input type="text" placeholder="仅支持中国大陆手机" class="form_normal">
                 <input type="text" placeholder="输入手机动态密码" class="form_code">
-                <input type="button" value="获取动态密码" class="form_btn">
+                <input type="button" value="获取动态密码" class="form_btn" id="btnSendCode" onClick="sendMessage()">
 
                 <button>登陆</button>
 
                 <div class="form_check">
-                    <a href="#">立即注册</a>
+                    <a href="a用户中心注册.html">立即注册</a>
                 </div>
 
                 <div class="form_other">

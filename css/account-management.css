@@ -17,6 +17,212 @@
     margin-top: -32px;
     margin-right: 610px;
 }
+/*我的首页*/
+.account_management>h1>span{
+    color: #eb6100;
+}
+.my_home div{
+    overflow: hidden;
+}
+.my_home h3{
+    font-size: 18px;
+    color: #666;
+    padding:10px 0;
+    border-bottom: 1px solid #ededed;
+    /*width: 810px;*/
+    /*display: inline-block;*/
+}
+.basic_news,.related_news{
+    width: 355px;
+    overflow: hidden;
+}
+.basic_news p,.related_news p{
+    color: #999;
+    font-size: 14px;
+    margin: 20px 0;
+}
+.basic_news p span {
+    color: #727272;
+}
+.car_news ul{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.car_news ul li{
+    position: relative;
+}
+.car_upper{
+    display: none;
+    width: 270px;
+    height: 195px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.car_news .mycar_up{
+    background: #000;
+    opacity: .5;
+    width: 270px;
+    height: 195px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+.car_news .mycar_pic{
+    height: 165px;
+}
+.car_news .mycar_pic div:last-child{
+    margin-top: 10px;
+}
+.car_news .mycar_text{
+    position: absolute;
+    top: 0px;
+    left: 33px;
+
+}
+.car_news .mycar_text p{
+    color: #fff;
+    margin: 25px 0;
+}
+.car_news .mycar_btn{
+    position: absolute;
+    top: 124px;
+    left: 33px;
+}
+.car_news .mycar_btn a{
+    color: #fff;
+}
+.leader_news ul{
+    margin-left: -52px;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.leader_news ul li{
+    width: 235px;
+    height: 265px;
+    margin: 0 0 30px 52px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.leader_news ul li .activityInfo {
+    position: absolute;
+    top: 216px;
+    left: 0px;
+    width: 318px;
+    height: 200px;
+}
+.leader_news ul li .activityInfo {
+    background: #f5f5f5;
+    width: 236px;
+    padding: 1px 10px 5px 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 143px;
+    transition: top .5s;
+}
+.leader_news ul li h5 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+    line-height: 30px;
+    width: 216px;
+    white-space: nowrap;
+    color: #333;
+}
+.leader_news ul li p.ju_none {
+    display: none;
+}
+.leader_news ul li p {
+    margin-top: 2px;
+    color: #999999;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+.leader_news ul li p i.icon_ju {
+    background: url("../img/ju.jpg") no-repeat;
+    background-size: 15px 15px;
+}
+.leader_news ul li p i {
+    width: 15px;
+    height: 15px;
+    margin: 2px 5px 0 0;
+}
+.leader_news ul li p i.icon_user {
+    background: url(../img/yj_tribe.png) no-repeat;
+    height: 16px;
+}
+.leader_news ul li p i {
+    width: 15px;
+    height: 15px;
+    margin: 2px 5px 0 0;
+}
+.leader_news ul li p span.price {
+    font-size: 25px;
+    margin-top: -10px;
+    margin-right: 15px;
+    color: #eb6100;
+}
+.leader_news ul li a.signup {
+
+    display: block;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background: #EB6100;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px auto;
+    margin-bottom: 15px;
+}
+.leader_news ul li p.deadline {
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    background: #eb6100;
+    opacity: .8;
+    filter: (Alpha=70);
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 5px;
+    text-align: center;
+}
+.leader_news ul li p {
+    margin-top: 2px;
+}
+.leader_news ul li p {
+    color: #999999;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+.leader_news ul li p span a {
+    color: #999;
+}
+.leader_news ul li:hover .activityInfo p.ju_none {
+    display: block;
+}
+.leader_news ul li:hover .activityInfo {
+    top: 75px;
+}
+span.sl_spr{
+    font-size: 16px;
+    color: #eb6100;
+    font-weight: bold;
+    margin-right: 610px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eb6100;
+}
 /*更换头像*/
 .pho_left{
     margin-top: 30px;
@@ -50,6 +256,9 @@
     height: 134px;
     border-radius: 50%;
 }
+
+
+
 .fileImg {
     overflow: hidden;
     margin: 20px auto;
@@ -78,7 +287,7 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.fileImg ul li:after {
+.fileImg ul li .sx{
     position: absolute;
     content: ' ';
     display: block;
@@ -89,25 +298,27 @@
     margin-left: -1px;
     top: 36%;
     margin-top: -15px;
-    z-index: 2;
+    z-index: 5;
 }
 
-.fileImg ul li:before {
+.fileImg ul li .hx {
     position: absolute;
     content: ' ';
     display: block;
     top: 50%;
     margin-top: -1px;
-    z-index: 2;
+    z-index: 5;
     width: 55px;
     height: 4px;
     background: #999;
     left: 38%;
     margin-left: -15px;
 }
-
-.fileImg ul li span:nth-child(2) {
+.fileImg ul li:first-child span{
     display: none;
+}
+.fileImg ul li span {
+    /*display: none;*/
     width: 94px;
     height: 94px;
     position: absolute;
@@ -120,11 +331,11 @@
     z-index: 3;
 }
 
-.fileImg ul li span:nth-child(2) img {
+.fileImg ul li span img {
     width: 94px;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 0;
     height: 94px;
 }
 
@@ -149,8 +360,19 @@ a.data_hid{
     color: #999;
     font-size: 12px;
 }
-.data_hid input{
-    margin-top: -3px;
+/*.data_hid input{*/
+    /*margin-top: -3px;*/
+/*}*/
+.data_right a i{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    margin-bottom: -1px;
+}
+.data_right a i.data_h{
+    background: url("../img/by_img/checked.png");
+    background-size: cover;
 }
 .successful{
     background: url("../img/icon_activity.png") no-repeat -100px -1px;
@@ -208,6 +430,9 @@ table tr td select{
     width: 155px;
     font-weight: bold;
     color: #ccc;
+    -webkit-appearance: none;
+    background: url(../img/un_down.png) no-repeat scroll right center transparent;
+
 }
 .data_hobby{
     height: 30px;
@@ -237,6 +462,9 @@ table tr td select{
     font-weight: bold;
     margin-bottom: 5px;
 }
+.data_right .chk_h{
+    margin: 0 5px 3px 30px;
+}
 .sl{
     color: #666;
 }
@@ -257,12 +485,17 @@ table tr td select{
     background: #ccc;
     margin-right: 10px;
 }
+.data_ads_add{
+    display: none;
+}
 .data_ads_add,.data_ads{
     margin-top: -10px;
     color: #333;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
+    margin-bottom: 10px;
+
 }
 .data_ads_add input:first-child{
     width: 310px;
@@ -282,21 +515,8 @@ table tr td select{
     font-weight: bold;
 
 }
-.data_ads div a{
-    margin-left: 35px;
-}
-.data_ads div:first-child a:last-child{
-    margin-left: 10px;
-}
-.data_ads div:nth-child(2){
-    margin-top: -15px;
-    margin-bottom: -10px;
-}
-.data_ads input[type=radio]{
-    margin-right: 10px;
-    margin-top: -1px;
-}
-.data_ads>a{
+
+a.new_add{
     width: 130px;
     height: 30px;
     line-height: 30px;
@@ -305,10 +525,46 @@ table tr td select{
     display: inline-block;
     margin-right: 15px;
 }
-.data_ads>span{
+a.new_add + span{
     color: #ccc;
 }
 
+.data_ads ul li{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.data_ads ul li .container{
+    width: auto;
+    display: inline-block;
+    margin-left: 25px;
+}
+.data_ads ul li input{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 0;
+    top: 0;
+    margin-top:10px;
+    opacity: 0;
+    z-index: 10;
+}
+.data_ads ul li input:checked + i {
+    background: url(../img/data_radio.png) no-repeat;
+    background-position: 0 -13px;
+}
+
+.data_ads ul li i {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 0;
+    top: 0;
+    background: url(../img/data_radio.png) no-repeat 0px 0px;
+    margin-top: 10px;
+    z-index: 9;
+}
 /*账户关联*/
 .account_relation>p{
     font-size: 16px;
@@ -323,15 +579,17 @@ table tr td select{
     font-size: 20px;
     color: #666;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 34px;
     margin-left: 20px;
     display: inline-block;
+    letter-spacing: 1px;
+    width: 152px;
 }
 .account_relation div div{
     float: left;
-    width: 140px;
-    height: 100px;
-    line-height: 100px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
     text-align: center;
 }
 .phone{
@@ -345,3 +603,306 @@ table tr td select{
     width: 53px;
     height: 35px;
 }
+.account_relation a{
+    color: #999;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #ededed;
+    padding: 5px 10px;
+}
+.account_relation a:hover{
+    color: #eb6100;
+}
+.account_relation div a{
+    margin-left: 280px;
+}
+.account_relation div:nth-child(2) a:last-child{
+    margin-left: 25px;
+}
+
+
+
+/*密码修改*/
+.change_pwd p{
+    font-size: 12px;
+    color: #aaaaaa;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.change_pwd table tr{
+    height: 50px;
+    line-height: 50px;
+    color: #eb6100;
+}
+.change_pwd table tr td:first-child{
+    width: 100px;
+    text-align: right;
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+}
+.change_pwd table tr td:last-child input{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.change_pwd table tr td:last-child input:focus,
+.change_pwd table tr:first-child td:nth-child(2) input:focus{
+    border: 1px solid #eb6100;
+}
+.change_pwd table tr:first-child td:nth-child(2) input{
+    border:1px solid #ededed;
+    width: 98px;
+    height: 23px;
+    line-height: 23px;
+}
+.pwd_normal {
+    border: 1px solid #ededed;
+    width: 298px;
+    height: 28px;
+    line-height: 28px;
+}
+.change_pwd table td span,.change_pwd table td input:nth-child(2){
+    height: 23px;
+    line-height: 19px;
+    text-align: center;
+    background: #eb6100;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+table tr td span.pwd_wrong{
+    display: inline-block;
+    width: 98px;
+    height: 27px;
+    line-height: 23px;
+    border: 1px solid #eb6100;
+    text-align: center;
+    color: #eb6100;
+    background: #f5f5f5;
+}
+table tr td span.pwd_wrong i{
+    width: 12px;
+    height: 11px;
+    line-height: 11px;
+    text-align: center;
+    border: 1px solid #eb6100;
+    border-radius: 50%;
+    color: #eb6100;
+    font-size: 10px;
+}
+.change_pwd table tr:nth-child(3) td span{
+    width: 263px;
+    height: 27px;
+    line-height: 24px;
+    border: 1px solid #ebebeb;
+    background: #F5F5F5;
+    color: #ccc;
+}
+.change_pwd table tr td button{
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #eb6100;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+    outline: none;
+}
+
+
+
+
+/*我的爱车*/
+.my_car p{
+    font-size: 14px;
+    color: #868686;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.my_car table tr{
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+}
+.my_car .car_left{
+    width: 82px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    padding-right: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+.my_car .car_right,.car_right input {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: bold;
+}
+input::-webkit-input-placeholder {
+    color: #ccc !important;
+}
+.my_car .car_right select,.car_right input{
+    width: 148px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+    outline: none;
+    margin-right: 20px;
+
+
+}
+.my_car .car_right select{
+    -webkit-appearance: none;
+    background: url(../img/un_down.png) no-repeat scroll right center transparent;
+}
+.my_car .car_right select option{
+    color: #666;
+}
+.my_car table tr:first-child td:nth-child(2) select{
+    /*display: block;*/
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    background: url(../img/un_down.png) no-repeat scroll right center transparent;
+}
+.my_car table tr:first-child td:nth-child(2) select:last-child{
+    margin-bottom: 0;
+}
+.my_car .car_right i{
+    color: #eb6100;
+    display: inline-block;
+    /*margin-left: 20px;*/
+}
+.my_car .car_right img{
+    position: absolute;
+    top: 7px;
+    left: 242px;
+}
+.my_car .car_right button{
+    width: 110px;
+    height: 40px;
+    background: #eb6100;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.my_car ul{
+    overflow: hidden;
+    margin-top: 5px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+/*.my_car ul li.select setDefault{*/
+    /*display:none*/
+/*}*/
+.mycar_list{
+    float: left;
+    width: 270px;
+    overflow: hidden;
+    position: relative;
+}
+.mycar_pic{
+    width: 270px;
+    height: 175px;
+    text-align: center;
+    padding-top: 30px;
+}
+.carpic_default{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-top: 60px solid #eb6100;
+    border-right: 60px solid transparent;
+}
+.mycar_pic .carpic_text{
+    position: absolute;
+    top: 8px;
+    left: 7px;
+
+}
+.default{
+    cursor: pointer;
+}
+.default span{
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.carpic_nomal{
+    width: 75px;
+    height: 30px;
+    background: #ccc;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.mycar_pic div:last-child{
+    background: url("../img/mycar_cp.png") no-repeat;
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    color: #eb6100;
+    margin: 25px auto 0;
+}
+.mycar_text,.mycar_btn{
+    text-align: center;
+}
+.mycar_text p{
+    color: #333;
+    font-weight: bold;
+    margin: 6px 0;
+    letter-spacing: 1px;
+}
+.mycar_text p:first-child{
+    font-size: 24px;
+
+}
+.mycar_text p:last-child{
+    font-size: 16px;
+}
+.mycar_btn{
+    margin-top: 23px;
+}
+.mycar_btn a{
+    width: 58px;
+    height: 18px;
+    border:1px solid #ccc;
+    display: inline-block;
+    color: #999;
+    font-size: 12px;
+    font-weight: bold;
+}
+.mycar_btn a.my_car_active{
+    color: #fff;
+    background: #eb6100;
+}
+
+
+
+
+
+
+
+
+
+
+
+

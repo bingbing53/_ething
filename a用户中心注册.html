@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/register_login.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/get-code.js"></script>
 </head>
 <body>
 
@@ -32,6 +33,7 @@
 </div>
 <!--end logo-->
 
+
 <!--注册主体-->
 <div class="register_back">
     <div class="wrapper">
@@ -42,7 +44,7 @@
             <input type="password" placeholder="密码" class="form_normal">
             <input type="tel" placeholder="请输入手机号" class="form_normal">
             <input type="text" placeholder="请输入手机验证码" class="form_code">
-            <input type="button" value="获取动态密码" class="form_btn">
+            <input type="button" value="获取动态密码" class="form_btn" id="btnSendCode" onClick="sendMessage()">
             <input type="text" placeholder="请输入验证码" class="form_code">
             <input type="button" class="form_btn">
             <button>登陆</button>
